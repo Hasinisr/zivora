@@ -1,0 +1,119 @@
+{
+  "theme": "dark",
+  "archetype": "5 (Luxury)",
+  "vibe": "Cinematic, futuristic, moody, expensive, luxury streetwear",
+  "colors": {
+    "background": "#050505",
+    "surface": "#111111",
+    "surface_secondary": "#1A1A1A",
+    "primary": "#E5E5E5",
+    "secondary": "#A0A0A0",
+    "border": "#222222",
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#A0A0A0",
+      "tertiary": "#666666"
+    },
+    "accents": {
+      "chrome_highlight": "#FFFFFF",
+      "matte_silver": "#A0A0A0",
+      "error": "#FF3B30",
+      "success": "#32D74B"
+    }
+  },
+  "typography": {
+    "headings": {
+      "font_family": "General Sans, Helvetica Neue, sans-serif",
+      "weight": "font-medium to font-bold",
+      "tracking": "tracking-tighter",
+      "h1": "text-5xl md:text-7xl tracking-tighter leading-[0.9]",
+      "h2": "text-4xl md:text-5xl tracking-tighter leading-none",
+      "h3": "text-2xl md:text-3xl tracking-tight leading-tight"
+    },
+    "body": {
+      "font_family": "Inter, SF Pro Display, sans-serif",
+      "size": "text-base md:text-lg",
+      "tracking": "tracking-normal",
+      "leading": "leading-relaxed"
+    },
+    "labels": {
+      "font_family": "Inter, sans-serif",
+      "style": "uppercase text-xs tracking-[0.2em] text-[#A0A0A0]"
+    }
+  },
+  "spacing": {
+    "section_padding": "py-24 md:py-32",
+    "container_padding": "px-6 md:px-12",
+    "gap_large": "gap-12 md:gap-24",
+    "gap_small": "gap-4 md:gap-8"
+  },
+  "layout_patterns": {
+    "hero": "Cinematic fullscreen (min-h-[100vh]) with abstract chrome background overlay or hyperreal close-up product image. Heavy use of negative space. Content anchored to bottom or dramatically centered.",
+    "collections": "Asymmetric bento grids ('Tetris Grid' mode). Mix col-span-8 and col-span-4 to create tension. Images should be massive.",
+    "product_page": "Immersive split-screen layout. Sticky product details on the right (or left), large fluid image gallery on the opposite side filling 100vh.",
+    "dashboards": "Minimalist 'Control Room' grid. Dense, functional, 1px borders, #111111 backgrounds."
+  },
+  "surface_strategies": {
+    "navigation": "Crystal Glassmorphism: backdrop-blur-2xl bg-black/40 border-b border-white/10. Sticky z-50.",
+    "cards": "Flat solid graphite (#111111) with 1px border (#222222). Hover effect: subtle border brightness increase (to #444) and slight scale up.",
+    "buttons": "Magnetic interaction feel. Primary: Solid Chrome/White (#E5E5E5) with black text. Secondary: Transparent with 1px border (#222222) and #E5E5E5 text."
+  },
+  "motion_and_interactions": {
+    "scrolling": "Lenis smooth scroll is MANDATORY for premium momentum feel.",
+    "hover_states": "Images scale smoothly (1.05x) over 0.6s ease. Links have a 1px underline that reveals from left to right.",
+    "page_transitions": "Fade to black and fade up content via Framer Motion.",
+    "parallax": "Subtle parallax on hero images and background chrome textures."
+  },
+  "component_instructions": {
+    "forms": "Highly customized Shadcn inputs. Transparent backgrounds, 1px bottom border only (no full box border), focus state brightens the bottom border to #E5E5E5.",
+    "modals": "Shadcn Dialog. Dark glassmorphism background. No visible close button (use text 'Close').",
+    "cart": "Side drawer (Shadcn Sheet). Minimalist layout, large product images, bold totals.",
+    "testing": "All interactive and key informational elements MUST include a data-testid attribute."
+  },
+  "media": {
+    "images": [
+      {
+        "category": "hero_background",
+        "description": "Abstract shiny metal texture for hero sections",
+        "url": "https://images.unsplash.com/photo-1634648852208-fc7e55a15751?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwxfHxjaHJvbWUlMjBtZXRhbCUyMHRleHR1cmUlMjBsdXh1cnklMjBkYXJrfGVufDB8fHx8MTc4MDQwODMzMHww&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "category": "hero_background_alt",
+        "description": "Dark abstract metallic waves",
+        "url": "https://images.unsplash.com/photo-1635151227785-429f420c6b9d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA4Mzl8MHwxfHNlYXJjaHwzfHxjaHJvbWUlMjBtZXRhbCUyMHRleHR1cmUlMjBsdXh1cnklMjBkYXJrfGVufDB8fHx8MTc4MDQwODMzMHww&ixlib=rb-4.1.0&q=85"
+      },
+      {
+        "category": "product_grills",
+        "description": "Black and white portrait of a man wearing grills",
+        "url": "https://images.pexels.com/photos/19060654/pexels-photo-19060654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      },
+      {
+        "category": "product_grills",
+        "description": "Close up gold grills",
+        "url": "https://images.pexels.com/photos/772850/pexels-photo-772850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      },
+      {
+        "category": "product_gems",
+        "description": "Teeth gems close up on smiling woman",
+        "url": "https://images.pexels.com/photos/8964508/pexels-photo-8964508.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      },
+      {
+        "category": "product_gems",
+        "description": "Smiling woman with face/teeth gems",
+        "url": "https://images.pexels.com/photos/7314264/pexels-photo-7314264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      }
+    ],
+    "guidelines": "NEVER use placeholder images. Always use the provided urls or realistic UI styling."
+  },
+  "instructions_to_main_agent": [
+    "Build out the full frontend structure in React + Vite + Tailwind.",
+    "Implement Framer Motion for text reveals, parallax, and smooth route transitions.",
+    "Ensure the entire UI strictly follows the grayscale/chrome dark theme. Avoid ANY bright colors (except critical errors or subtle success).",
+    "Integrate Firebase for Auth and DB. Create schemas for users, products, orders, and custom quotes.",
+    "Set up Razorpay in test mode.",
+    "Develop Admin Dashboard and Customer Dashboard with a 'Control Room' dense aesthetic.",
+    "Use Phosphor icons or Lucide icons with thin weights for a sharp, premium look.",
+    "Currency must be hardcoded or formatted as Indian Rupees (INR) ₹ across the entire platform.",
+    "Include 'data-testid' on all interactive elements as per the rules."
+  ]
+}

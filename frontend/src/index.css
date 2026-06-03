@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=general-sans@200,300,400,500,600,700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #050505;
+    color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+@layer base {
+    :root {
+        /* ZIVORA Luxury Dark Theme */
+        --background: 0 0% 2%;          /* #050505 */
+        --foreground: 0 0% 100%;        /* #FFFFFF */
+        --card: 0 0% 7%;                /* #111111 */
+        --card-foreground: 0 0% 100%;
+        --popover: 0 0% 7%;
+        --popover-foreground: 0 0% 100%;
+        --primary: 0 0% 90%;            /* #E5E5E5 chrome */
+        --primary-foreground: 0 0% 5%;
+        --secondary: 0 0% 10%;          /* #1A1A1A */
+        --secondary-foreground: 0 0% 90%;
+        --muted: 0 0% 10%;
+        --muted-foreground: 0 0% 63%;   /* #A0A0A0 */
+        --accent: 0 0% 13%;
+        --accent-foreground: 0 0% 100%;
+        --destructive: 4 100% 60%;      /* #FF3B30 */
+        --destructive-foreground: 0 0% 100%;
+        --border: 0 0% 13%;             /* #222222 */
+        --input: 0 0% 13%;
+        --ring: 0 0% 90%;
+        --radius: 0.25rem;
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+    body {
+        @apply bg-background text-foreground;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        font-family: 'General Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 500;
+        letter-spacing: -0.04em;
+        line-height: 0.95;
+    }
+    
+    .font-display {
+        font-family: 'General Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+    .label-uppercase {
+        @apply uppercase text-xs tracking-[0.2em] text-[#A0A0A0];
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #050505;
+}
+::-webkit-scrollbar-thumb {
+    background: #222222;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #444444;
+}
+
+/* Selection */
+::selection {
+    background: #E5E5E5;
+    color: #050505;
+}
+
+/* Glassmorphism Navbar */
+.glass-nav {
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    background: rgba(5, 5, 5, 0.6);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Chrome Text Effect */
+.text-chrome {
+    background: linear-gradient(180deg, #FFFFFF 0%, #A0A0A0 50%, #FFFFFF 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Noise Texture Overlay */
+.noise-overlay::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+    opacity: 0.05;
+    mix-blend-mode: overlay;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* Hover underline animation */
+.hover-underline {
+    position: relative;
+    display: inline-block;
+}
+.hover-underline::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: currentColor;
+    transition: width 0.4s ease;
+}
+.hover-underline:hover::after {
+    width: 100%;
+}
+
+/* Magnetic button effect */
+.magnetic-btn {
+    transition: transform 0.4s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+/* Product card hover effect */
+.product-card {
+    transition: all 0.6s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+.product-card:hover {
+    border-color: rgba(255, 255, 255, 0.25);
+}
+.product-card:hover img {
+    transform: scale(1.08);
+}
+.product-card img {
+    transition: transform 0.8s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+/* Marquee animation */
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+.animate-marquee {
+    animation: marquee 30s linear infinite;
+}
+
+/* Shimmer effect */
+@keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+}
+.shimmer {
+    background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.05) 50%, transparent 100%);
+    background-size: 200% 100%;
+    animation: shimmer 3s linear infinite;
+}
+
+/* Hide number input arrows */
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Fonts */
+.font-mono-luxury {
+    font-family: 'Inter', monospace;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.05em;
+}
