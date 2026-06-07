@@ -46,7 +46,7 @@ const Home = () => {
           initial={{ opacity: 0, x: 120, scale: 0.85 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 1.4, delay: 0.6, ease: [0.2, 0.9, 0.3, 1] }}
-          className="hidden md:block absolute right-0 top-[28%] -translate-y-1/2 w-[55%] lg:w-[50%] xl:w-[45%] z-[5] pointer-events-none"
+          className="hidden md:block absolute right-[-5%] top-[50%] -translate-y-1/2 w-[75%] lg:w-[70%] xl:w-[65%] z-[5] pointer-events-none"
           data-testid="hero-grill-image"
         >
           <motion.div
@@ -57,7 +57,7 @@ const Home = () => {
             <img
               src="/zivora-hero-new.png"
               alt="ZIVORA Signature Grill"
-              className="w-full h-auto object-contain select-none"
+              className="w-full h-full object-contain select-none"
               style={{
                 mixBlendMode: "lighten",
                 filter: "drop-shadow(0 30px 60px rgba(255,255,255,0.06)) contrast(1.05) brightness(1.05)",
