@@ -57,7 +57,7 @@ const Home = () => {
             <img
               src="/zivora-hero-new.png"
               alt="ZIVORA Signature Grill"
-              className="w-full h-auto select-none"
+              className="w-full h-auto object-contain select-none"
               style={{
                 mixBlendMode: "lighten",
                 filter: "drop-shadow(0 30px 60px rgba(255,255,255,0.06)) contrast(1.05) brightness(1.05)",
