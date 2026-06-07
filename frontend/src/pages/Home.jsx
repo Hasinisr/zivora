@@ -55,7 +55,7 @@ const Home = () => {
             className="relative"
           >
             <img
-              src="/hero-grill.png"
+              src="/zivora-hero-new.png"
               alt="ZIVORA Signature Grill"
               className="w-full h-auto select-none"
               style={{
