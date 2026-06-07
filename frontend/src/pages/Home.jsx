@@ -112,7 +112,7 @@ const Home = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.9, duration: 0.8 }}
-              className="flex gap-4"
+              className="flex gap-4 md:translate-y-12"
             >
               <Link to="/shop" data-testid="hero-shop-cta" className="group bg-white text-black px-8 py-4 text-sm uppercase tracking-[0.2em] flex items-center gap-3 hover:bg-[#E5E5E5] transition-colors">
                 Shop Collection
