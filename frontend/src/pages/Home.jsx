@@ -46,7 +46,7 @@ const Home = () => {
           initial={{ opacity: 0, x: 120, scale: 0.85 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 1.4, delay: 0.6, ease: [0.2, 0.9, 0.3, 1] }}
-          className="hidden md:block absolute right-[-5%] top-[40%] -translate-y-1/2 w-[90%] lg:w-[85%] xl:w-[80%] z-[5] pointer-events-none"
+          className="hidden md:block absolute right-[-5%] top-[10%] -translate-y-1/2 w-[90%] lg:w-[85%] xl:w-[80%] z-[5] pointer-events-none"
           data-testid="hero-grill-image"
         >
           <motion.div
