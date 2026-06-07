@@ -31,7 +31,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-[#050505]" data-testid="home-page">
       {/* HERO */}
-      <section className="relative min-h-[100vh] flex items-end pt-32 pb-16 overflow-hidden noise-overlay">
+      <section className="relative min-h-[90vh] flex items-center pt-24 pb-0 overflow-hidden noise-overlay">
         <div className="absolute inset-0">
           <img
             src="https://images.unsplash.com/photo-1634648852208-fc7e55a15751?crop=entropy&cs=srgb&fm=jpg&q=85"
@@ -46,7 +46,7 @@ const Home = () => {
           initial={{ opacity: 0, x: 120, scale: 0.85 }}
           animate={{ opacity: 1, x: 0, scale: 1 }}
           transition={{ duration: 1.4, delay: 0.6, ease: [0.2, 0.9, 0.3, 1] }}
-          className="hidden md:block absolute right-[-5%] top-[50%] -translate-y-1/2 w-[75%] lg:w-[70%] xl:w-[65%] z-[5] pointer-events-none"
+          className="hidden md:block absolute right-[-5%] top-[40%] -translate-y-1/2 w-[90%] lg:w-[85%] xl:w-[80%] z-[5] pointer-events-none"
           data-testid="hero-grill-image"
         >
           <motion.div
@@ -92,7 +92,7 @@ const Home = () => {
             initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4, ease: [0.2, 0.9, 0.3, 1] }}
-            className="font-display text-6xl md:text-8xl lg:text-[10rem] text-white tracking-tighter leading-[0.85] mb-8 max-w-5xl"
+            className="font-display text-5xl md:text-7xl lg:text-[8rem] text-white tracking-tighter leading-[0.85] mb-8 max-w-5xl"
           >
             Own Your<br />
             <span className="text-chrome italic">Shine.</span>
